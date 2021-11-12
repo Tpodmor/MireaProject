@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="ru.mirea.petukhov.mireaproject.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="ru.mirea.petukhov.mireaproject.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="ru.mirea.petukhov.mireaproject.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/calculateFragment"
+        android:name="ru.mirea.petukhov.mireaproject.CalculateFragment"
+        android:label="@string/caclulator"
+        tools:layout="@layout/fragment_calculate" />
+    <fragment
+        android:id="@+id/nav_brouser"
+        android:name="ru.mirea.petukhov.mireaproject.WebViewFragment"
+        android:label="@string/brows"
+        tools:layout="@layout/fragment_web_view" />
+    <fragment
+        android:id="@+id/music"
+        android:name="ru.mirea.petukhov.mireaproject.Music"
+        android:label="@string/music"
+        tools:layout="@layout/fragment_music" />
+    <activity
+        android:id="@+id/camera_"
+        android:name="ru.mirea.petukhov.mireaproject.Camera"
+        android:label="@string/camera"
+        tools:layout="@layout/activity_camera_" />
+    <activity
+        android:id="@+id/recorder_"
+        android:name="ru.mirea.petukhov.mireaproject.Recorder"
+        android:label="@string/record"
+        tools:layout="@layout/activity_recorder" />
+    <fragment
+        android:id="@+id/preferences"
+        android:name="ru.mirea.petukhov.mireaproject.Preferences"
+        android:label="@string/preference"
+        tools:layout="@layout/fragment_preferences" />
+    <fragment
+        android:id="@+id/history"
+        android:name="ru.mirea.petukhov.mireaproject.History"
+        android:label="@string/history"
+        tools:layout="@layout/fragment_history" />
+
+    <fragment
+        android:id="@+id/fr_network"
+        android:name="ru.mirea.petukhov.mireaproject.Network"
+        android:label="@string/net"
+        tools:layout="@layout/fragment_network" />
+</navigation>
